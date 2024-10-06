@@ -7,6 +7,7 @@ import { cn } from '@/lib/utils'
 import { div, img } from "framer-motion/client";
 import Phone from "./Phone";
 
+// Tableau des chemins d'images pour les témoignages (testimonials).
 const PHONES = [
     "/testimonials/1.jpg",
     "/testimonials/2.jpg",
@@ -16,6 +17,8 @@ const PHONES = [
     "/testimonials/6.jpg",
 ]
 
+// Fonction utilitaire pour diviser un tableau en un nombre spécifié de parties.
+// Elle distribue les éléments de manière ronde (round-robin) entre les parties.
 function splitArray<T>(array: Array<T>, numParts: number) {
     const result: Array<Array<T>> = []
 
